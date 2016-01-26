@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Pixels2DipCalculator</string>
+    <string name="density">HDPI</string>
+</resources>
