@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,19 +7,96 @@
 
     <TextView
         android:id="@+id/this_device"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="left"
-        android:padding="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp"
+        android:text="@string/this_device"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/this_devices_density"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp"
+        android:layout_toRightOf="@+id/this_device"
+        android:text="@string/this_devices_density"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/this_devices_density"
+        android:layout_marginLeft="15dp"
+        android:text="- - -"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/pixels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_margin="15dp"
+        android:text="@string/pixels"
         android:textSize="18dp" />
 
     <TextView
         android:id="@+id/density"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="left"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
+        android:layout_below="@+id/divider"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/pixels"
+        android:text="@string/density"
         android:textSize="18dp" />
 
-</LinearLayout>
+    <EditText
+        android:id="@+id/integer_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pixels"
+        android:layout_marginLeft="10dp"
+        android:inputType="number"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pixels"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/integer_entry"
+        android:text="\@"
+        android:textSize="18dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pixels"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/at" />
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/integer_entry"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/calculate" />
+
+    <TextView
+        android:id="@+id/display_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculate_button"
+        android:layout_margin="15dp"
+        android:textSize="18dp" />
+
+</RelativeLayout>

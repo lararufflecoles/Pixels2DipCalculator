@@ -1,4 +1,18 @@
 <resources>
-    <string name="app_name">Pixels2DipCalculator</string>
+    <string name="app_name">Pixels 2 Dip Calculator</string>
     <string name="this_device">This device:</string>
+    <string name="pixels">Pixels</string>
+    <string name="density">Density</string>
+    <string name="choose">Choose</string>
+    <string name="calculate">Calculate</string>
+
+    <string-array name="density_list">
+        <item>LDPI</item>
+        <item>MDPI</item>
+        <item>HDPI</item>
+        <item>XHDPI</item>
+        <item>XXHDPI</item>
+        <item>XXXHDPI</item>
+    </string-array>
+
 </resources>
