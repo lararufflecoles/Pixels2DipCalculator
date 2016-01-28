@@ -7,7 +7,6 @@
     <string name="calculate">Calculate</string>
 
     <string-array name="density_list">
-        <item>LDPI</item>
         <item>MDPI</item>
         <item>HDPI</item>
         <item>XHDPI</item>

@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/this_devices_density"
         android:layout_marginLeft="15dp"
-        android:text="- - -"
+        android:text="-----"
         android:textSize="18dp" />
 
     <TextView
@@ -55,10 +55,10 @@
 
     <EditText
         android:id="@+id/integer_entry"
-        android:layout_width="wrap_content"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/pixels"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="12dp"
         android:inputType="number"
         android:textSize="18dp" />
 
@@ -67,7 +67,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/pixels"
-        android:layout_marginLeft="51dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@+id/integer_entry"
         android:text="\@"
@@ -79,7 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/pixels"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="30dp"
         android:layout_toRightOf="@+id/at" />
 
     <Button
@@ -87,7 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/integer_entry"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="12dp"
         android:layout_marginTop="15dp"
         android:text="@string/calculate" />
 
