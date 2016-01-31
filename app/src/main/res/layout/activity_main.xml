@@ -7,96 +7,89 @@
 
     <TextView
         android:id="@+id/this_device"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/GenericFontSizeAndAppearance"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_margin="15dp"
-        android:text="@string/this_device"
-        android:textSize="18dp" />
+        android:text="@string/this_device" />
 
     <TextView
         android:id="@+id/this_devices_density"
+        style="@style/GenericFontSizeAndAppearance"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignParentTop="true"
-        android:layout_margin="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
         android:layout_toRightOf="@+id/this_device"
-        android:text="@string/this_devices_density"
-        android:textSize="18dp" />
-
-    <TextView
-        android:id="@+id/divider"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/this_devices_density"
-        android:layout_marginLeft="15dp"
-        android:text="-----"
-        android:textSize="18dp" />
+        android:text="@string/this_devices_density" />
 
     <TextView
         android:id="@+id/pixels"
-        android:layout_width="wrap_content"
+        style="@style/GenericFontSizeAndAppearance"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/divider"
+        android:layout_below="@+id/this_devices_density"
         android:layout_margin="15dp"
-        android:text="@string/pixels"
-        android:textSize="18dp" />
+        android:text="@string/pixels" />
 
     <TextView
         android:id="@+id/density"
+        style="@style/GenericFontSizeAndAppearance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/divider"
-        android:layout_marginLeft="60dp"
+        android:layout_below="@+id/this_devices_density"
         android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
         android:layout_toRightOf="@+id/pixels"
-        android:text="@string/density"
-        android:textSize="18dp" />
+        android:text="@string/density" />
 
     <EditText
         android:id="@+id/integer_entry"
-        android:layout_width="50dp"
+        style="@style/GenericFontSizeAndAppearance"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/pixels"
-        android:layout_marginLeft="12dp"
-        android:inputType="number"
-        android:textSize="18dp" />
+        android:layout_margin="12dp"
+        android:inputType="number" />
 
     <TextView
         android:id="@+id/at"
+        style="@style/GenericFontSizeAndAppearance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/pixels"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
         android:layout_toRightOf="@+id/integer_entry"
-        android:text="\@"
-        android:textSize="18dp" />
+        android:text="@string/at" />
 
     <Spinner
         android:id="@+id/spinner"
+        style="@style/GenericFontSizeAndAppearance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/pixels"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="20dp"
         android:layout_toRightOf="@+id/at" />
 
     <Button
         android:id="@+id/calculate_button"
+        style="@style/ButtonFontSizeAndAppearance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/integer_entry"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="15dp"
+        android:layout_margin="15dp"
         android:text="@string/calculate" />
 
     <TextView
         android:id="@+id/display_result"
-        android:layout_width="wrap_content"
+        style="@style/GenericFontSizeAndAppearance"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/calculate_button"
-        android:layout_margin="15dp"
-        android:textSize="18dp" />
+        android:layout_margin="15dp" />
 
 </RelativeLayout>

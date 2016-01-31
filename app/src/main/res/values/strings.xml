@@ -6,6 +6,9 @@
     <string name="choose">Choose</string>
     <string name="calculate">Calculate</string>
 
+    <string name="at">\@</string>
+    <string name="divider">-----</string>
+
     <string-array name="density_list">
         <item>MDPI</item>
         <item>HDPI</item>

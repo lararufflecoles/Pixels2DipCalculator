@@ -13,11 +13,11 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final int MDPI = 160;
-    public static final int HDPI = 240;
-    public static final int XHDPI = 320;
-    public static final int XXHDPI = 480;
-    public static final int XXXHDPI = 640;
+    public static final float MDPI = 160;
+    public static final float HDPI = 240;
+    public static final float XHDPI = 320;
+    public static final float XXHDPI = 480;
+    public static final float XXXHDPI = 640;
 
     private String selectedItem;
 
@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.density_list, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item); // Specify the layout to use when the list of choices appears
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.density_list, R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(R.layout.simple_spinner_dropdown_item); // Specify the layout to use when the list of choices appears
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
             @Override
@@ -46,10 +46,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 EditText pixelValueEditText = (EditText) findViewById(R.id.integer_entry);
-
                 String userEntry = pixelValueEditText.getText().toString();
                 int pixels = Integer.parseInt(userEntry);
-                int screenDensity = 0;
+                float screenDensity = 0;
 
                 if (selectedItem.equals("MDPI")) {
                     screenDensity = MDPI;
@@ -63,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                     screenDensity = XXXHDPI;
                 }
 
-                int densityIndependentPixels = (pixels * 160) / screenDensity;
+                float densityIndependentPixels = (pixels * 160) / screenDensity;
                 String display = densityIndependentPixels + " Dip";
 
                 TextView displayResultText = (TextView) findViewById(R.id.display_result);
